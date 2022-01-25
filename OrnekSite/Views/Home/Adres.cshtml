@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Adres";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div id="sidebar" class="span3">
+        <div class="well well-small">
+            <ul class="nav nav-list">
+                @Html.Action("_CategoryList", "Category")
+                <li style="border:0"> &nbsp;</li>
+                @Html.Action("Summary", "Cart")
+            </ul>
+        </div>
+
+
+        @Html.Action("_FeaturedProductList", "Home")
+
+
+
+    </div>
+    <div class="span9">
+        <ul class="breadcrumb">
+            <li><a href="/Home/Index">Ana Sayfa</a> <span class="divider">/</span></li>
+            
+            <li class="active">Adres</li>
+        </ul>
+        <div class="well well-small">
+         <h4>Adres: Evliya Çelebi Yerleşkesi Tavşanlı Yolu 10.km Kütahya / Türkiye </h4>
+            <h4>Telefon:</h4>   
+            <hr class="softn clr">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.475842610423!2d29.898412314729846!3d39.48116861992803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c94893e58a97d5%3A0x86150cbafe506ac8!2sK%C3%BCtahya%20Dumlup%C4%B1nar%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1625142978818!5m2!1str!2str"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
